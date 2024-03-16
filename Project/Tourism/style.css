@@ -1,0 +1,16 @@
+.test {
+  color: red;
+}
+
+.bg-card-container {
+  background-color: red;
+  text-align: center;
+}
+
+.bg {
+  background-color: yellow;
+  background-image: url("../../assets/image.avif");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 450px;
+}
