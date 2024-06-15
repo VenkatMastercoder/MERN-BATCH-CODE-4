@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+
+  <!--FireBase SDK-->
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+  <!---
+    step 1 : e.preventDefault()
+
+    step 2 : to get all the data ==> inputName.value
+
+    step 3 : to vaild the data 
+            - basic Vaildation
+                - type="email" required
+                - same : js
+            - Regex Vaildation 
+
+    step 4 : to send the data to db
+            - fireBase
+  
+    -->
+
+  <form id="formId"> <!--Submit Event-->
+    <!-- Press ENTER OR Submit Button -->
+
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter Name"/>
+    <p id="nameError"></p>
+
+    <label for="email">Email</label>
+    <input id="email" required placeholder="Enter Email"/>
+    <p id="emailError"></p>
+
+    <label for="message">Message</label>
+    <textarea id="message" type="text" placeholder="Enter Message"></textarea>
+    <p id="messageError"></p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const formElement = document.getElementById("formId")
+    // <form><from/>
+
+    const inputName = document.getElementById("name");
+    const inputEmail = document.getElementById("email");
+    const messageElement = document.getElementById("message");
+
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+
+    inputName.addEventListener("blur", (e) => {
+      if (e.target.value === "") {
+        nameError.textContent = "*required"
+      }
+      else {
+        nameError.textContent = ""
+      }
+    })
+
+    messageElement.addEventListener("blur", (e) => {
+      if (e.target.value === "") {
+        messageError.textContent = "*required"
+      }
+      else {
+        messageError.textContent = ""
+      }
+    })
+
+    inputEmail.addEventListener("blur", (e) => {
+      if (e.target.value === "") {
+        emailError.textContent = "*required"
+      }
+      else {
+        emailError.textContent = ""
+      }
+    })
+
+
+    function validateData(name, email, message) {
+
+      if (name.length < 2) {
+        nameError.textContent = "*Min 10 word required"
+      }
+
+      if (message.length < 5) {
+        messageError.textContent = "*Min 10 word required"
+      }
+      const emailRegex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+      if (!email.match(emailRegex)) {
+        emailError.textContent = "Enter Vaild Email"
+      }
+    }
+
+
+    function saveData(name, email, message) {
+
+      console.log(name, email, message)
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAzvkvkc5oJe6d_cj9mKhwhYzHMU6nWjvI",
+        authDomain: "batch-4-form.firebaseapp.com",
+        databaseURL: "https://batch-4-form-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "batch-4-form",
+        storageBucket: "batch-4-form.appspot.com",
+        messagingSenderId: "295944128280",
+        appId: "1:295944128280:web:34a25cc5115a60a4cbc06d"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+
+      const db = firebase.database().ref("ReqForm");
+
+      db.push({
+        name: name,
+        email: email,
+        message: message,
+      });
+
+      formElement.reset()
+    }
+
+    formElement.addEventListener("submit", (e) => {
+      console.log("Form Submit")
+      e.preventDefault()
+
+      // console.log(inputName.value,inputEmail.value,messageElement.value)
+
+      validateData(inputName.value, inputEmail.value, messageElement.value);
+
+      saveData(inputName.value, inputEmail.value, messageElement.value)
+
+    })
+
+  </script>
+
+</body>
+
+</html>

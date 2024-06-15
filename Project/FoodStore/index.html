@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store - Project</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- 
+
+    SWIGGY Media Query in Tailwind 
+
+    300px phone - <h1>What's on your mind?</h1> : 16px - sm
+
+    600px Tab - <h1>What's on your mind?</h1> : 16px - md
+
+    1200px Laptop - <h1>What's on your mind?</h1> : 16px - lg
+ 
+    2500px Tv -  <h1>What's on your mind?</h1> : 36px - xl
+
+  -->
+
+  <!-- <h1 class="text-[16px] lg:text-[24px] xl:text-[36px]">What's on your mind?</h1> -->
+
+  <div class="2xl:container hidden">
+    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg: xl:">
+      <div>
+        <!--Content-->
+      </div>
+    </div>
+  </div>
+
+  <!-- html:5 <h1> <p> <button> img-->
+
+  <!-- Header Starting -->
+  <!-- <section class="bg-red-500 h-[10vh]">
+    <p>NavBar</p>
+  </section> -->
+  <!--Header Ending -->
+
+  <!-- 
+    Step 1 : flex ==> we can apply flex Property
+    Step 2 : flex ==> dir : row   , col
+
+    Step 3 :
+    justify-content- start , center , end: ,between main Axis
+    items- start , center , end : cross Axis
+  -->
+
+  <!-- 
+    step : 1 ==> container - w-[90%] mx-auto
+    step : 2 ==> grid : we can apply grid Property
+    step : 3 ==> grid-col : number game
+    step : 4 ==> Always Wrap the Content inside a Div
+  -->
+
+  <!-- 
+    3 break points 
+    sm:1         md:2         lg:1
+    text-3xl     text-4xl     text-6xl
+    
+    2 break points 
+    sm : 2    lg  : 1
+    text-4xl  text-6xl
+    
+  -->
+
+  <!--NavBar-->
+
+  <!-- Hero Section Starting : How to Center Element inside : Div -->
+  <section class="hero-bg py-5">
+    <!-- 3 Lines of Code -->
+    <div class="2xl:container h-[100%]">
+      <div class="w-[90%] mx-auto grid grid-cols-1 h-[100%]">
+        <div class="flex flex-col justify-center items-center gap-4 text-center">
+          <h1 class="text-white text-3xl md:text-4xl lg:text-6xl">Get Delicious Food Anytime</h1>
+          <p class="text-white text-xl">Eat Smart & Healthy</p>
+
+          <div class="space-y-4">
+            <button class="bg-[#d0b200] rounded-xl px-8 py-4 text-white">View Menu</button>
+            <button class="bg-transparent border border-[#d0b200] px-8 py-4 rounded-xl text-white">Order Now</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section Ending -->
+
+  <!-- Why Choose Us Starting -->
+  <section class="bg-[#f9fbfe] py-5">
+
+    <div class="2xl:container my-4">
+      <div class="w-[90%] mx-auto grid grid-cols-1 gap-2">
+        <h1 class="text-[#183b56] text-3xl font-['Poppins'] font-bold">Why Choose Us?</h1>
+        <p class="text-sm font-['Poppins']">We use both original recipes and classic versions of famous food items. </p>
+      </div>
+    </div>
+
+    <div class="2xl:container">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!--Card Starting-->
+        <div class="bg-white flex flex-col items-center rounded-lg p-4 shadow-lg gap-4">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" alt="CardImg" />
+          <p class="text-lg font-['Poppins'] text-black">Food Service</p>
+          <p class="text-center font-['Poppins'] text-black">
+            Experience fine dining at the comfort of your home. All our orders
+            are carefully packed and arranged to give you the nothing less than
+            perfect.
+          </p>
+        </div>
+        <!--Card Starting-->
+
+        <!--Card Starting-->
+        <div class="bg-white flex flex-col items-center rounded-lg p-4 shadow-lg gap-4">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" alt="CardImg" />
+          <p class="text-lg font-['Poppins'] text-black">Food Service</p>
+          <p class="text-center font-['Poppins'] text-black">
+            Experience fine dining at the comfort of your home. All our orders
+            are carefully packed and arranged to give you the nothing less than
+            perfect.
+          </p>
+        </div>
+        <!--Card Starting-->
+
+
+        <!--Card Starting-->
+        <div class="bg-white flex flex-col items-center rounded-lg p-4 shadow-lg gap-4">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" alt="CardImg" />
+          <p class="text-lg font-['Poppins'] text-black">Food Service</p>
+          <p class="text-center font-['Poppins'] text-black">
+            Experience fine dining at the comfort of your home. All our orders
+            are carefully packed and arranged to give you the nothing less than
+            perfect.
+          </p>
+        </div>
+        <!--Card Starting-->
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us Ending -->
+
+  <!-- Explore Menu Starting -->
+  <section class="py-5">
+    <!-- sm:1 md:2 lg:4 -->
+    <!--Container-->
+    <div class="2xl:container">
+
+      <div class="w-[90%] mx-auto grid grid-cols-1">
+        <div>
+          <h1 class="text-[#183b56] text-3xl font-['Poppins'] font-bold">Explore Menu</h1>
+        </div>
+      </div>
+
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Safety Container : no grid col-->
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+        <!-- Card Starting -->
+        <div class="bg-white p-4 rounded-2xl space-y-2 shadow-lg">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="card-image" class="rounded-3xl w-[100%]" />
+          <p class="text-lg font-['Poppins'] text-[#000]">Non-Veg Starters</p>
+          <p class="flex flex-row items-center gap-2">View All
+            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
+              <path fillrule="evenodd"
+                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
+            </svg>
+
+          </p>
+        </div>
+        <!-- Card Ending -->
+
+      </div>
+    </div>
+  </section>
+  <!-- Explore Menu Ending -->
+
+  <!-- Healthy Section Starting -->
+  <section class="bg-[#f9fbfe] py-5">
+    <!-- sm : 1 , md : 2, lg:2 , xl:2 -->
+    <div class="2xl:container">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+
+        <div class="flex flex-col justify-center items-center">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png"
+            alt="Healthy-Image" />
+        </div>
+
+        <div class="flex flex-col justify-center items-start gap-4">
+          <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Fresh, Healthy, Organic, Delicious Fruits
+          </h1>
+          <p class="text-base font-['Poppins'] text-[#afbbc4]">Say no to harmful chemicals and go fully organic with our
+            range of fresh fruits and veggies. Pamper your
+            body and your senses with the true and unadulterated gifts from mother nature. with the true and
+            unadulterated gifts from mother nature</p>
+          <button class="bg-[#d0b200] rounded-xl px-8 py-4 text-white">View Menu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Healthy Section Ending -->
+
+  <!-- Delivery and Payment Starting -->
+  <section class="py-5">
+    <!-- sm : 1 , md: 2 , lg: 2 , xl:2 -->
+    <div class="2xl:container">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div class="space-y-4 order-2 md:order-1">
+          <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Delivery and Payment</h1>
+          <p class="text-base font-['Poppins'] text-[#afbbc4]">Enjoy hassle-free payment with the plenitude of payment
+            options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see
+            your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online. </p>
+          <button class="bg-[#d0b200] rounded-xl px-8 py-4 text-white">Order Now</button>
+
+          <div class="flex flex-row gap-4">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" alt="card-img"
+              class="h-10" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" alt="card-img"
+              class="h-10" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" alt="card-img"
+              class="h-10" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" alt="card-img"
+              class="h-10" />
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center order-1 md:order-2">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png"
+            alt="Card-Image" class="h-48" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Delivery and Payment Ending -->
+
+  <!--Thank you Section Starting-->
+  <section class="bg-[#faf7e5] py-5">
+    <!-- sm : 1 , md: 2 , lg: 2 , xl:2 -->
+    <div class="2xl:container">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div class="flex flex-col justify-center items-start space-y-4">
+          <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold"> Thank you for being a valuable customer to
+            us. </h1>
+          <p class="text-base font-['Poppins'] text-[#afbbc4]">We have a surprise gift for you</p>
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+            alt="Card-Image" class="h-48 md:hidden" />
+          <button class="bg-[#d0b200] rounded-xl px-8 py-4 text-white">Redeem Gift</button>
+        </div>
+        <div class="md:flex flex-col justify-center items-center hidden">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+            alt="Card-Image" class="h-48" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Thank you Section Ending-->
+
+  <!-- Follow Section Starting -->
+  <section class="py-5">
+    <!-- sm : 1 , md: 1 , lg : 1 -->
+    <div class="2xl:container">
+      <div class="w-[90%] mx-auto grid grid-cols-1">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h1 class="text-2xl font-['Poppins'] text-[#0d2436] font-semibold">Follow Us</h1>
+
+          <div class="flex flex-row gap-4">
+            <div class="bg-yellow-500 rounded-full w-16 h-16 flex flex-col justify-center items-center">
+              <svg fill="currentColor" viewbox="0 0 16 16" height="1.9em" width="1.9em">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </div>
+
+            <div class="bg-yellow-500 rounded-full w-16 h-16 flex flex-col justify-center items-center">
+              <svg fill="currentColor" viewbox="0 0 16 16" height="1.9em" width="1.9em">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </div>
+
+            <div class="bg-yellow-500 rounded-full w-16 h-16 flex flex-col justify-center items-center">
+              <svg fill="currentColor" viewbox="0 0 16 16" height="1.9em" width="1.9em">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Follow Section Ending -->
+
+  <!-- Footer Section Starting -->
+  <footer class="bg-[#0d2436] py-5">
+    <div class="2xl:container">
+      <div class="w-[90%] mx-auto grid grid-cols-1">
+        <div class="flex flex-col justify-center items-center gap-4 text-center">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" alt="Logo"
+            class="h-24" />
+          <p class="text-[#939cab]">orderfood@foodmunch.com</p>
+          <p class="text-[#939cab]">123 Ayur Vigyan Nagar, New Delhi, India. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer SSection Ending -->
+</body>
+
+</html>

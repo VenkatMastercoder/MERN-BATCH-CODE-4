@@ -1,0 +1,74 @@
+.paragraph {
+  background-color: red;
+  width: 500px;
+  height: 50px;
+  /* overflow: hidden; all the content will be hidden*/
+  overflow:scroll;
+  font-size: 20px;
+}
+
+.container {
+  background-color: gray;
+}
+
+.span-element {
+  background-color: green;
+}
+
+.media {
+  background-color: yellow;
+}
+
+.new {
+  background-color: red;
+}
+
+.newParagrah {
+  margin: 20px;
+  background-color: blue;
+}
+
+.heading {
+  font-size: 90px;
+}
+
+/* 300 - 499 */
+@media (min-width:300px) {
+  .media {
+    background-color: green;
+  }
+}
+
+/* 500 - x */
+@media (min-width:500px) {
+  .media {
+    background-color: red;
+  }
+}
+
+@media (orientation:landscape) {
+  .new {
+    background-color: aqua;
+  }
+}
+
+@media (orientation:portrait) {
+  .new {
+    background-color: yellow;
+  }
+}
+
+/* newParagrah - screen size : 300px , landscape = red */
+/* not min-300 - x ::: 0 -299 */
+@media not (min-width:300px), (orientation:landscape){
+  .newParagrah {
+    margin: 20px;
+    background-color:red;
+  }
+}
+
+@media (max-width:500px) {
+  .heading {
+    font-size: 45px;
+  }
+}

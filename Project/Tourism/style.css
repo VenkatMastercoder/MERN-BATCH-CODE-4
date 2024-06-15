@@ -3,7 +3,7 @@
 }
 
 .bg-card-container {
-  background-color: red;
+  background-color: white;
   text-align: center;
 }
 
@@ -13,4 +13,9 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 450px;
+}
+
+.bg-page-2 {
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+  background-size: contain;
 }

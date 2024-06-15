@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+
+  <!-- Tailwind CDN : tailwind.CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- 
+    NavBar 
+    - 2 Grid NavBar  [ Swiggy ]
+      - Logo  [ Left ]
+      - Content [ Right ]
+
+      - Step 1 : Create Grid 
+      - Step 2 : Align Content using Flex
+      - Step 3 : Add menu and Cross Icon : flex - justify-between [ Logo and Menu ] , md:hiddend
+      - Step 4 : toggle
+      - Step 5 : auto Close Features
+
+    - 3 Grid NavBar
+      - Logo [ Left ]
+      - search or Content [ Middle ]
+      - button or content [ Right ]
+    -->
+
+  <div class="2xl:container bg-red-500">
+    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 bg-green-600">
+
+      <div class="bg-yellow-50 flex justify-between">
+        <p>Logo</p>
+
+        <div>
+          <!--Menu Icon-->
+          <svg class="md:hidden" viewbox="0 0 1024 1024" fill="currentColor" height="1em" width="1em" id="menuIcon">
+            <path
+              d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z" />
+          </svg>
+
+          <!--Cross Icon-->
+          <svg class="hidden md:hidden" viewbox="0 0 21 21" fill="currentColor" height="1em" width="1em" id="crossIcon">
+            <g fill="none" fillrule="evenodd" stroke="currentColor" strokelinecap="round" strokelinejoin="round">
+              <path d="M15.5 15.5l-10-10zM15.5 5.5l-10 10" />
+            </g>
+          </svg>
+        </div>
+
+      </div>
+
+      <div id="ulElement" class="hidden md:block">
+        <ul class=" bg-slate-500 flex flex-col justify-center items-center md:flex-row md:justify-end gap-4">
+          <li id="home">
+            <a href="">
+              Home
+            </a>
+          </li>
+          <li id="help">Help</li>
+          <li id="offer">Offer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    const menuIcon = document.getElementById("menuIcon");
+    const crossIcon = document.getElementById("crossIcon");
+    const ulElement = document.getElementById("ulElement");
+
+    const home = document.getElementById("home");
+    const help = document.getElementById("help");
+    const offer = document.getElementById("offer");
+
+    menuIcon.addEventListener("click", () => {
+      ulElement.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      crossIcon.classList.toggle("hidden");
+    })
+
+    crossIcon.addEventListener("click", () => {
+      ulElement.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      crossIcon.classList.toggle("hidden");
+    })
+
+    help.addEventListener("click", () => {
+      ulElement.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      crossIcon.classList.toggle("hidden");
+    })
+
+    home.addEventListener("click", () => {
+      ulElement.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      crossIcon.classList.toggle("hidden");
+    })
+
+    offer.addEventListener("click", () => {
+      ulElement.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      crossIcon.classList.toggle("hidden");
+    })
+
+
+  </script>
+
+
+</body>
+
+</html>

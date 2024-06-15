@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day - 11</title>
+  <!-- link:css -->
+  <link rel="stylesheet" href="../CSS/day11.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!--
+    - P - ELEMENT 
+    - <P></P> - TAG 
+
+    SiZing of Elements 
+      - intrinsic Sizing [ Default Size ]
+      - Extrinsic Sizing [ When we Change the Default Sizing ]
+
+    [ Default Size ]
+      - ✅ inline 
+        - span
+        - a
+      - ✅ block level
+        - paragraph
+        - div
+    
+    When we Specfic Size the Element 
+    - OverFlow
+      - visible [ default ]
+      - hidden
+      - scroll
+      - auto [ when ever the element is getting overflow]
+
+      - axis 
+        - overflow-x-
+        - overflow-y-
+
+    Sizing 
+      - Min-size 
+      - Max-size
+      
+    min-size : 300px ==> X
+      - min-h
+      - min-w
+    max-size : 0 => 300px
+      - max-w
+      - max-h
+
+    - Media Query 
+      - screen size : 500px -> red
+      - screen size : 300px -> green 
+     - Syntax : @media (condition) {}
+
+    - Types of Media
+      - orientation
+        - landscape - left to right [ width < height ]
+        - portrait - top to bottom [ width > height ]
+      - min-width and min-height
+        max-width and max-height
+      - logical Operators 
+       - and - (min-width:300px) and (orientation:landscape)
+       - or - (min-width:300px), (orientation:landscape)
+       - not - oppsite
+
+    Tailwind
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+  -->
+  <button class="bg-yellow-500 py-2 px-8 shadow-sm shadow-black">Hello World</button>
+
+  <button class="bg-yellow-500 py-2 px-8 drop-shadow-md cursor-pointer ">Hello World</button>
+
+  
+  <!-- <p class="overflow-y-auto w-[300px] h-20 bg-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+    corrupti maxime temporibus
+    repellendus nobis reprehenderit quia repudiandae laborum dicta expedita a, minus saepe incidunt inventore veniam
+    dolor provident esse recusandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti maxime
+    temporibus repellendus nobis reprehenderit quia repudiandae laborum dicta expedita
+  </p>
+
+  <div class="min-h-[300px] max-w-[300px] bg-green-500">sfrgreg</div> -->
+
+  <!-- 
+       - Media Query
+        - P 
+          - screen size : 500px -> red
+          - screen size : 300px -> green 
+        
+  -->
+  <!-- <p class="media">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab necessitatibus consectetur odit, ex
+    deleniti mollitia, iusto voluptatum a amet explicabo quos dolores. Perspiciatis officia odit voluptates, nesciunt
+    corporis ea.</p>
+
+  <p class="new">orientation</p>
+
+  <p class="newParagrah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem nemo temporibus, illo
+    voluptatem aliquid quidem minima nam, deleniti at dolorum, modi aut dolore earum incidunt omnis ducimus sed aperiam!
+  </p> -->
+
+
+
+
+  <!-- 0 - 767 ==> 30px
+       768 - X ==> 90px -->
+  <!-- <h1 class="text-[30px] md:text-[90px]">Heading</h1> -->
+
+
+
+
+</body>
+
+</html>

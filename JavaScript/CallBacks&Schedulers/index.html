@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallBacks</title>
+</head>
+
+<body>
+
+  <button id="btnStart">Start</button>
+  <button id="btnStop">Stop</button>
+  <p>setInterval</p>
+  <p id="para">0</p>
+
+  <button id="btnStartTimeout">Start</button>
+  <button id="btnStopTimeout">Stop</button>
+  <p>setTimeout</p>
+  <p id="paraTimeout">0</p>
+
+
+  <script>
+    const btnStart = document.getElementById("btnStart");
+    const btnStop = document.getElementById("btnStop");
+    const ptag = document.getElementById("para");
+
+    const btnStartTimeout = document.getElementById("btnStartTimeout");
+    const btnStopTimeout = document.getElementById("btnStopTimeout");
+    const paraTimeout = document.getElementById("paraTimeout");
+
+    var intervalId;
+    var timeoutId;
+
+    btnStart.addEventListener("click", function () {
+      intervalId = setInterval(() => {
+        ptag.textContent = parseInt(ptag.textContent) + 1
+      }, 1000)
+    })
+
+    btnStop.addEventListener("click", () => {
+      clearInterval(intervalId)
+    })
+
+    btnStartTimeout.addEventListener("click", function () {
+      timeoutId = setTimeout(() => {
+        paraTimeout.textContent = parseInt(paraTimeout.textContent) + 1
+      }, 2000)
+    })
+
+    btnStopTimeout.addEventListener("click", () => {
+      clearTimeout(timeoutId)
+    })
+  </script>
+
+</body>
+
+</html>

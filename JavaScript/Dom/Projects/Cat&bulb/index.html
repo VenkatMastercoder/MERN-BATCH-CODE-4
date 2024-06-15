@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Cat&Bulb</title>
+</head>
+
+<body>
+
+  <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573" alt="top"
+    id="Img1" class="h-10" />
+  <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774" alt="bottom" id="Img2"
+    class="h-10" />
+
+  <p id="paragraph">Switched Off</p>
+
+  <button id="onBtn" class="bg-slate-600">On</button>
+  <button id="offBtn" class="bg-yellow-50">Off</button>
+
+
+  <script>
+    const img1 = document.getElementById("Img1");
+    const img2 = document.getElementById("Img2");
+
+    const paragraphElement = document.getElementById("paragraph");
+    // <p id="paragraph">Switched Off</p>
+
+    const buttonOn = document.getElementById("onBtn");
+    const buttonOff = document.getElementById("offBtn");
+
+    // textContent
+    buttonOff.addEventListener("click", () => {
+      img1.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-off-img.png?updatedAt=1702818065200"
+      img2.src= "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-eyes-img.png?updatedAt=1702818102345"
+      paragraphElement.textContent = "Switched Off"
+      buttonOff.className = "bg-green-500"
+      buttonOn.className = "bg-slate-600"
+    })
+
+    buttonOn.addEventListener("click", () => {
+      console.log(img1)
+      img1.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573"
+      img2.src= "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774"
+      paragraphElement.textContent = "Switched On"
+      buttonOn.className = "bg-red-500"
+      buttonOff.className = "bg-slate-600"
+    })
+
+
+  </script>
+
+</body>
+
+</html>

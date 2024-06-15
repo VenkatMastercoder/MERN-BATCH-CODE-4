@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couter App</title>
+</head>
+<body>
+  
+  <h1>Counter</h1>
+
+  <p id="para">0</p>
+
+  <div>
+    <button id="red">-</button>
+    <button id="reset">reset</button>
+    <button id="add">+</button>
+  </div>
+
+  <script>
+    const paragraphElement = document.getElementById("para");
+    //<p id="para">0</p>
+    const subBtn = document.getElementById("red");
+    //    <button class="red">-</button>
+    const resetBtn = document.getElementById("reset");
+
+    const addBtn = document.getElementById("add");
+
+    addBtn.addEventListener("click",()=>{
+      console.log(typeof(paragraphElement.textContent))
+      paragraphElement.textContent = parseInt(paragraphElement.textContent) + 1
+    })
+
+    subBtn.addEventListener("click",()=>{
+      paragraphElement.textContent = parseInt(paragraphElement.textContent) - 1
+    })
+
+    resetBtn.addEventListener("click",()=>{
+      paragraphElement.textContent = 0
+    })
+ 
+  </script>
+
+</body>
+</html>

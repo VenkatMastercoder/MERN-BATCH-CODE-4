@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tourism Project</title>
 
+  <!-- TAILWIND VIA CDN -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <link rel="stylesheet" href="./tailwind.css">
+
   <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
 
-  <div class="bg">
-    <div class="bg-card-container">
-      <h1>Tourism</h1>
-      <p>Getting Started with Trip</p>
-      <button>Get Started</button>
+  <div class="bg flex flex-col justify-end">
+    <!-- Flex Items -->
+    <div class="bg-card-container p-5 rounded-t-3xl space-y-4">
+      <h1 class="text-5xl m-2">Tourism</h1>
+      <p class="m-2">Getting Started with Trip</p>
+
+      <a href="/Project/Tourism/page2.html">
+        <button class="bg-blue-400 px-6 py-3 rounded-2xl m-2">Get Started</button>
+      </a>
+
     </div>
   </div>
 
 </body>
+
 </html>

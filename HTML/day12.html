@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day - 12</title>
+
+  <link rel="stylesheet" href="../CSS/day12.css">
+
+</head>
+
+<body>
+
+  <!-- Types of Selector : it help to select the html where we want to inject the css 
+    1. Class Selector ==> .class_Name {}
+    ---
+    2. ID Selector ==> #id_Name {}
+    3. Type/ Element Selector ==> tagName {}
+    4. Universal Selector ==> * [ Top ]
+    5. Pesudo-Classs Selector ==> : [ :hover ]
+
+    Box Sizing
+      1. Content Box : default 
+      2. Border Box - PADDING , BORDER 
+  -->
+
+  <p class="paragraph tracking-in-expand-fwd">Hello World</p>
+
+  <p id="para">Today</p>
+
+  <h1>Heading</h1>
+
+  <button class="button slit-in-vertical">Hello All</button>
+
+  <!--
+    w : 50 [ l to r ] - 54 
+    h : 50 [ top to bottom ] - 54
+
+    padding : 10px [ l , r , top , botttom ]
+
+    w : 50 + 10 [l] + 10 [r] = 70
+    h : 50 + 10 [t] + 10 [b] = 70
+
+  -->
+
+
+  <!-- 
+    Css Specificity [ Hierarchy ]
+
+    - inline Style ['TOP']
+    - ID Selector
+    - Class Selector
+    - Pseudo Selector
+    - Tag / Element Selector
+    - Universal Selector     ['least']
+
+  -->
+
+  <p class="css" id="css-id">Css Specificity</p>
+
+  <p class="hello">hgviygvihvih</p> 
+
+  <!-- parent -->
+  <div id="parent">
+    <p class="hello">Hello World</p> <!-- Child -->
+  </div>
+
+  <div class="box box1">
+    Box 1
+  </div>
+
+  <div class="box box2">
+    Box 2
+  </div>
+
+  <div class="box box3">
+    Box 3
+  </div>
+
+  <!-- Differ B/w Id and Class Selector 
+    id -- should be unqiue 
+    class -- there is no condition
+  -->
+</body>
+
+</html>
